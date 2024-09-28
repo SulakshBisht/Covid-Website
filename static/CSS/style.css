@@ -1,0 +1,100 @@
+body{
+    background-color: rgb(134, 134, 192);
+}
+h1{
+    text-align: center;
+    font-size: 300%;
+} 
+.Form{
+    margin-top: 70px;
+    padding-left: 50px; 
+    margin-bottom: 50px;
+}
+input[type=text], select, textarea{
+    width: 20%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 9px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+input[type=number], select, textarea{
+    width: 20%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 9px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+input[type=int], select, textarea{
+    width: 5%;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 15px;
+    margin-top: 9px;
+    margin-bottom: 16px;
+    resize: vertical;
+    margin-left: 50px;
+}
+input[type=submit] {
+    background-color: red;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#gender{
+    width: 7%;
+}
+#reside{
+    width: 8%;
+    margin-bottom: 40px;
+}
+h2{
+    padding-left: 20px;
+}
+form {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+.stay{
+    padding-left: 10px;
+}
+input[type="checkbox"] {
+    margin-right: 10px;
+    margin-left: 40px;
+    transform: scale(1.2); 
+}
+.CheckBox{
+display: flex;
+    flex-direction: column; 
+    gap: 1px; 
+    padding: 10px;
+}
+label {
+    margin-right: 30px;
+}
+h3{
+    padding-left: 20px;
+}
+input[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ef0d0d; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 30px;
+    margin-left: 20px;
+}
+input[type="submit"]:hover {
+    background-color: #08df13; 
+}

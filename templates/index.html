@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Prediction</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/style.css')}}">
+</head>
+<body>
+   <h1>Covid Prediction</h1>
+   <form action="/predict" method="post">
+         
+        <div class="Form">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="fname" placeholder="Your First Name.." required>
+
+            <label for="age">Age</label>
+            <input type="number" id="age" name="age" placeholder="Your Age.." required> <br>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lname" placeholder="Your Last Name.." required>
+
+            <label for="gender">Gender</label>
+            <select name="gender" id="gender" required>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+        </div>
+
+        <!-- Symptoms Section -->
+        <h2> Mark Your Symptoms given Below: </h2>
+        <div class="stay">
+        <label for="reside">  Where You Reside </label>
+            <select name="reside" id="reside" required>
+                <option value="home">Home</option>
+                <option value="hospital">Hospital</option>
+            </select>
+        <div class="CheckBox">
+            <input type="checkbox" id="pneu" name="pneu">
+            <label for="pneu"> Suffering From Pneumonia</label>
+
+            <input type="checkbox" id="intu" name="intu">
+            <label for="intu">Whether You are Intubed</label>
+
+            <input type="checkbox" id="asth" name="asth">
+            <label for="asth">Suffering From Asthma</label>
+
+            <input type="checkbox" id="hyper" name="hyper">
+            <label for="hyper">Suffering From Hypertension</label>
+
+            <input type="checkbox" id="obesi" name="obesi">
+            <label for="obesi">Suffering From Obesity</label>
+
+            <input type="checkbox" id="tobba" name="tobba">
+            <label for="tobba">Consumption of any Kind of Tobacco</label>
+
+            <input type="checkbox" id="diabetes" name="diabetes">
+            <label for="diabetes">Suffering From Diabetes</label>
+
+            <input type="checkbox" id="inmsupr" name="inmsupr">
+            <label for="inmsupr">Are You are Immunosuppressed?</label>
+
+            <input type="checkbox" id="covid" name="covid">
+            <label for="other disease">Suffering From Covid</label>
+
+            <input type="checkbox" id="Renal_Chronic" name="Renal_Chronic">
+            <label for="renal_chronic">suffering From Renal Chronic</label>
+
+            <input type="checkbox" id="Cardiovascular" name="Cardiovascular">
+            <label for="cardiovascular">Suffering From Cardiovascular</label>
+            
+            <input type="checkbox" id="other" name="other">
+            <label for="other">Having any Other Kind of Disease</label>
+
+            <input type="checkbox" id="copd" name="copd">
+            <label for="copd">Suffering From Chronic Obstructive Pulmonary Disease(COPD)</label>
+
+            <input type="checkbox" id="usmer" name="usmer">
+            <label for="usmer">USMER</label>
+
+            <input type="checkbox" id="medical_unit" name="medical_unit">
+            <label for="medical_unit">Medical Unit</label>
+        </div>
+    </div>
+
+        <br><br>
+
+        <input id="button" type="submit" value="Submit">
+    </form>
+
+    <!-- Optional Section to Display Result -->
+    <h3><i>Now</i>, Your Survival Rate</h3>
+    <div class="TextBox">
+        <form action="/result">
+            <input type="text" id="fresult" name="fresult" placeholder="Chances of Survival.." readonly>
+        </form>
+    </div>
+
+    <!--Script after clicking th validate button-->
+    <script src="{{ url_for('static', filename='JS/index.js')}}"></script>
+    
+</body>
+</html>
